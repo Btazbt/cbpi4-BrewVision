@@ -22,6 +22,7 @@ pip install -e .
 Restart CraftBeerPi. Add a sensor of type **BrewVision**:
 
 - MAC Address: `D0:B5:C2:AE:6B:3A` (blank accepts any)
+#use the test_brewvision.py to find the MAC address for your BrewVision
 - Listen Host: `127.0.0.1`
 - Listen Port: `5599`
 - Unit: `F` or `C`
