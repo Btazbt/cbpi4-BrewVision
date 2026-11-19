@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbpi4-BrewVision"
+version = "0.3.0"
+description = "CraftBeerPi4 listener for Blichmann BrewVision readings"
+readme = "README.md"
+license = {text = "GPL-3.0"}
+requires-python = ">=3.8"
+dependencies = []
+
+[project.entry-points."cbpi4"]
+BrewVision = "cbpi4_BrewVision:setup"
