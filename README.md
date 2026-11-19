@@ -1,8 +1,8 @@
 # cbpi4-BrewVision
 
-CraftBeerPi only listens. A separate script owns the Bluetooth thermometer and pushes readings in.
+This provides a CraftBeerPi plugin that listens for temperatur updates from another python script. A separate script connects to the Blichmann BrewVision device (a Bluetooth thermometer) and pushes readings up to craftbeerpi.
 
-CBPi was hanging because the plugin talked to BlueZ during startup. That code is no longer imported by the plugin.
+
 
 ## Pieces
 
@@ -17,7 +17,7 @@ CBPi was hanging because the plugin talked to BlueZ during startup. That code is
 cd cbpi4-BrewVision
 pip install -e .
 # or: pipx runpip cbpi4 install -e .
-```
+# or: pipx runpip cbpi4 install --force-reinstall ~/cbpi4/cbpi4-BrewVision
 
 Restart CraftBeerPi. Add a sensor of type **BrewVision**:
 
